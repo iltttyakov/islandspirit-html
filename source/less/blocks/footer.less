@@ -1,0 +1,286 @@
+.footer {
+  padding-top: 35px;
+  padding-bottom: 44px;
+
+  border-top: 1px solid #696969;
+  background-color: #EEEEEE;
+
+  .privacy-policy-link {
+    position: absolute;
+    left: 15px;
+    top: -13px;
+
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: rgba(50, 50, 50, 0.5);
+
+    transition: all 0.1s ease;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: #00A5DD;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.footer__top {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.footer__left {
+  flex-shrink: 0;
+}
+
+.footer__logo {
+  display: block;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.footer__logo-pic {
+  width: 330px;
+  object-fit: contain;
+}
+
+a.footer__logo {
+  transition: all 0.1s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.footer__address {
+  position: relative;
+
+  max-width: 316px;
+  margin: 0;
+  margin-left: 14px;
+  padding-bottom: 15px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #323232;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 118px;
+    height: 2px;
+
+    background-color: #00A5DD;
+  }
+}
+
+.footer__right {
+  margin-left: auto;
+  padding-top: 10px;
+}
+
+.footer__menu {
+  margin-bottom: 19px;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 19px 0 14px;
+}
+
+.footer__bottom {
+  position: relative;
+  display: flex;
+}
+
+.footer__contacts-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__phone {
+  margin-bottom: 10px;
+
+  font-size: 23px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+
+.footer__email {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.footer__phone,
+.footer__email {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #323232;
+
+  transition: all 0.1s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #00A5DD;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.footer__copyright {
+  margin: 0 auto;
+
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #323232;
+
+  opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    .privacy-policy-link {
+      position: static;
+    }
+  }
+
+  .footer__bottom,
+  .footer__contacts,
+  .footer__top,
+  .footer__bottom,
+  .footer__menu,
+  .footer__right,
+  .footer__container,
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .footer__top {
+    margin-bottom: 0;
+  }
+
+  .footer__contacts {
+    order: 1;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .footer__menu {
+    position: relative;
+
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    order: 2;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+
+      margin-left: -45px;
+      width: 86px;
+      height: 2px;
+
+      background: #00A5DD;
+    }
+  }
+
+  .footer__socials {
+    order: 2;
+  }
+
+  .footer__contacts-column {
+    order: 1;
+  }
+
+  .footer__right {
+    padding-top: 14px;
+    margin-left: 0;
+  }
+
+  .footer__phone {
+    margin-bottom: 7px;
+  }
+
+  .footer__email {
+    margin-bottom: 25px;
+  }
+
+  .footer__socials {
+    margin-bottom: 30px;
+  }
+
+  .footer__contacts {
+    margin-bottom: 20px;
+  }
+
+  .footer__callback {
+   order: 3;
+  }
+
+  .footer__logo {
+    width: 233px;
+    height: 49px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+  .footer__logo-pic {
+    width: 233px;
+    height: 49px;
+
+    object-fit: contain;
+  }
+
+  .footer__address {
+    margin: 0 auto;
+    padding: 0;
+
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .footer__police {
+    margin-bottom: 9px;
+
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+

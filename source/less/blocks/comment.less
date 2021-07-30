@@ -1,0 +1,264 @@
+.comment {
+  .comment-respond {
+    width: 100%;
+  }
+
+  .comment-reply-title {
+    display: none;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    margin-bottom: 18px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+
+    justify-content: center;
+    min-height: 47px;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #00A5DD;
+
+    border: 1px solid #00A5DD;
+    border-bottom: 2px solid #00A5DD;
+    background-color: #ffffff;
+
+    cursor: pointer;
+    transition: all 0.1s ease;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+
+      background-color: #00A5DD;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 18px 24px;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #323232;
+
+    border: none;
+    background-color: #ffffff;
+    outline-color: #00a5dd;
+
+    &::-webkit-input-placeholder {color: #B4B4B4;}
+    &:-ms-input-placeholder {color: #B4B4B4;}
+    &::-ms-input-placeholder {color: #B4B4B4;}
+    &::placeholder {color: #B4B4B4;}
+  }
+
+  li.comment {
+    position: relative;
+
+    padding-left: 104px;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../img/user_icon.png");
+    }
+  }
+
+  .comment-author {
+    display: none;
+  }
+
+  .comment-meta {
+    display: flex;
+    align-items: center;
+  }
+
+  .comment-edit-link {
+    display: none;
+  }
+
+  .children {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: -70px;
+    padding-left: 0;
+  }
+}
+
+.comment__header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 36px;
+  padding-left: 10px;
+}
+
+.comment__title {
+  margin: 0;
+  margin-right: 50px;
+
+  font-family: "Marmelad", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  color: #696969;
+}
+
+.comment__count {
+  margin: 0;
+
+  font-family: "Marmelad", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #B4B4B4;
+}
+
+.comment__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+li.comment,
+.comment__block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #E5E5E5;
+
+  &:last-child {
+    margin-bottom: 0;
+
+    border: none;
+  }
+}
+
+.comment__avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 44px;
+
+  object-fit: cover;
+
+  &--form {
+    margin-right: 20px;
+  }
+}
+
+.comment__form {
+  width: 100%;
+}
+
+.comment__body {
+  margin-top: -6px;
+}
+
+.comment-metadata,
+.comment__date {
+  margin: 0;
+  margin-bottom: 2px;
+
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #B4B4B4;
+
+  a {
+    color: #B4B4B4;
+  }
+}
+
+.comment-reply-link,
+.comment-content,
+.comment-content p,
+.comment__text {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #696969;
+}
+
+.comment-reply-link {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .comment__title {
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+
+  .comment__header {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .comment__avatar {
+    margin-right: 20px;
+
+    &--form {
+      margin-right: 0;
+    }
+  }
+
+  li.comment {
+    padding-left: 70px;
+  }
+
+  .comment__form {
+    textarea {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  .comment__block {
+    padding-bottom: 15px;
+  }
+
+  .comment__body {
+    margin-top: -3px;
+  }
+
+  .comment__date {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .comment__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

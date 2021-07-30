@@ -1,0 +1,64 @@
+.founder {
+  position: relative;
+
+  width: 350px;
+  height: 525px;
+  margin-bottom: 6px;
+}
+
+.founder__photo {
+  object-fit: cover;
+}
+
+.founder__position {
+  position: absolute;
+  bottom: 76px;
+  left: 20px;
+
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #323232;
+}
+
+.founder__name {
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+
+  margin: 0;
+
+  font-family: "Marmelad", "Arial", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #323232;
+}
+
+@media (max-width: 1024px) {
+  .founder {
+    margin-bottom: -44px;
+  }
+
+  .founder__name,
+  .founder__position {
+    left: 0;
+  }
+
+  .founder__position {
+    bottom: 102px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .founder__name {
+    bottom: 55px;
+
+    font-size: 30px;
+    line-height: 45px;
+  }
+}

@@ -1,0 +1,61 @@
+.nav-links {
+  display: flex;
+
+  .page-numbers {
+    min-width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #696969;
+
+    border: 1px solid #E5E5E5;
+    fill: transparent;
+    stroke: #696969;
+  }
+
+  a.page-numbers {
+    cursor: pointer;
+    transition: all 0.1s ease;
+
+    &:hover,
+    &:focus {
+      color: #00A5DD;
+      border-color: #00A5DD;
+      stroke: #00A5DD;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  .dots {
+    border: none;
+  }
+
+  .current {
+    color: #00A5DD;
+    border-color: #00A5DD;
+  }
+
+  .next,
+  .prev {
+    border: none;
+  }
+
+  .prev {
+    margin-right: 0;
+    margin-left: 10px;
+
+    transform: rotate(-180deg);
+  }
+}
+
+

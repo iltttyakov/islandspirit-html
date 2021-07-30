@@ -1,0 +1,75 @@
+.request {
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/request-bg.jpg");
+}
+
+.request__container {
+  position: relative;
+  height: 100vh;
+}
+
+.request__logo-container {
+  position: absolute;
+  left: 0;
+  top: 60px;
+
+  width: 297px;
+  height: 63px;
+}
+
+.request__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.request__subscribe {
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+
+  padding: 49px 45px 50px;
+  width: 526px;
+  margin-left: auto;
+  margin-right: 104px;
+
+  background-color: rgba(0, 165, 221, 0.9);
+  box-shadow: 5px 10px 8px rgba(0, 70, 94, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .request {
+    height: unset;
+    padding-top: 35px;
+    padding-bottom: 80px;
+
+    .subscribe__title {
+      margin-bottom: 10px;
+    }
+  }
+
+  .request__container {
+    height: unset;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .request__logo-container {
+    position: static;
+
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .request__subscribe {
+    position: static;
+    width: 100%;
+    padding: 49px 15px;
+  }
+}

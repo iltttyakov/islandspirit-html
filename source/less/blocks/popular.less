@@ -1,0 +1,109 @@
+.popular {
+  width: 100%;
+}
+
+.popular__header {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.popular__list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  list-style: none;
+}
+
+.popular__name {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.popular__more {
+  overflow: hidden;
+
+  height: 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #00A5DD;
+
+  transition: all 0.1s ease;
+}
+
+.popular__more-icon {
+  margin-left: 14px;
+
+  fill: transparent;
+  stroke: #00A5DD;
+}
+
+.popular__link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.popular__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px 0 20px;
+  margin-bottom: 10px;
+
+  border: 1px solid #E5E5E5;
+
+  &:hover {
+    .popular__more {
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .popular {
+    margin-bottom: 31px;
+  }
+
+  .popular__header {
+    padding-left: 0;
+    margin-bottom: 12px;
+  }
+
+  .popular__item {
+    padding: 14px 9px;
+    margin-bottom: 11px;
+  }
+
+  .popular__name {
+    margin: 0;
+
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .popular__more {
+    display: none;
+  }
+}
